@@ -15,7 +15,7 @@ authors = [
 
 description = "A kivy remote controll app for mavsdk"
 readme = "README.rst"
-license = {file = "LICENSE.txt"}
+
 keywords = ['kivy', 'mavlink', 'mavsdk', 'joystick', 'android']
 classifiers = [
   "Development Status :: 4 - Beta",
