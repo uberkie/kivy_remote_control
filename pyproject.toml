@@ -10,7 +10,7 @@ dependencies = [
 ]
 requires-python = ">=3.6, <3.11"
 authors = [
-  { name="uberkie", email="aj@datainc.co.za" },
+  { name="uberkie", email="aj@datainc.co.za" }
 ]
 
 description = "A kivy remote controll app for mavsdk"
@@ -20,7 +20,7 @@ keywords = ['kivy', 'mavlink', 'mavsdk', 'joystick', 'android']
 classifiers = [
   "Development Status :: 4 - Beta",
   "Programming Language :: Python",
-  "Operating System :: linux_x86_64",
+  "Operating System :: linux_x86_64"
 ]
 
 [project.urls]
