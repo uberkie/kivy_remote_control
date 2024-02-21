@@ -20,7 +20,6 @@ setup(
     description='Kivy android joystick for mavsdk',
     long_description='{}\n{}'.format(
         re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
-        re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst')),
     ),
     packages=find_packages(where="src"),
     package_dir={'': 'src'},
