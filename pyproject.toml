@@ -21,7 +21,7 @@ keywords = ['kivy', 'mavlink', 'mavsdk', 'joystick', 'android']
 classifiers = [
   "Development Status :: 4 - Beta",
   "Programming Language :: Python",
-  "Operating System :: linux_x86_64"
+
 ]
 
 [project.urls]
