@@ -1,14 +1,27 @@
-from setuptools import setup, find_packages
+import io
+import re
+from glob import glob
+from os.path import basename
+from os.path import dirname
+from os.path import join
+from os.path import splitext
 
-with open("README.rst", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+from setuptools import find_packages
+from setuptools import setup
+
+
+def read(*names, **kwargs):
+    with io.open(join(dirname(__file__), *names), encoding=kwargs.get('encoding', 'utf8')) as fh:
+        return fh.read()
 
 setup(
     name='kivy_remote_control',
     version='0.1', 
     description='Kivy android joystick for mavsdk',
-    long_description=long_description,
-    long_description_content_type="text/x-rst",
+    long_description='{}\n{}'.format(
+        re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
+        re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst')),
+    ),
     packages=find_packages(where="src"),
     package_dir={'': 'src'},
     python_requires=">3.6, <=3.11",
