@@ -1,0 +1,18 @@
+[project]
+name = "kivy_remote_control"
+version = "0.0.1"
+authors = [
+  { name="uberkie", email="aj@datainc.co.za" },
+]
+description = "A kivy remote controll app for mavsdk"
+readme = "README.md"
+requires-python = ">=3.6, <3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: linux_x86_64",
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
