@@ -19,7 +19,7 @@ license = "LICENSE.txt"
 keywords = ['kivy', 'mavlink', 'mavsdk', 'joystick', 'android']
 classifiers = [
   "Development Status :: 4 - Beta",
-  "Programming Language :: Python"
+  "Programming Language :: Python",
   "Operating System :: linux_x86_64",
 ]
 
